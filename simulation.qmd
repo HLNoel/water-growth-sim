@@ -50,3 +50,10 @@ ggplot(plant_data, aes(x = water, y = growth)) +
   ) +
   theme_minimal(base_size = 14)
 ```
+
+```{r}
+#fit a linear model 
+model <- lm(growth ~ water, data=plant_data)
+
+summary(model)
+```
